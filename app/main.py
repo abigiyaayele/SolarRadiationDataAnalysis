@@ -8,7 +8,7 @@ import os
 def visualize_data(df):
     """
     Visualize data including line charts, summary statistics, correlation analysis, and histograms.
-    
+
     Args:
     df (pandas.DataFrame): Processed DataFrame.
     """
