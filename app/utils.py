@@ -3,15 +3,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from scipy import stats
-import numpy as np 
+import numpy as np
 
 def fetch_data(file_path):
     """
     Load data from a CSV file and return a DataFrame.
-    
+
     Args:
     file_path (str): Path to the CSV file.
-    
+
     Returns:
     pandas.DataFrame: DataFrame containing the loaded data.
     """
@@ -21,23 +21,23 @@ def fetch_data(file_path):
 def process_data(df):
     """
     Process the DataFrame by handling missing values, outliers, and incorrect entries.
-    
+
     Args:
     df (pandas.DataFrame): Input DataFrame.
-    
+
     Returns:
     pandas.DataFrame: Processed DataFrame.
     """
     # Check for missing values
     print("Missing values:")
     print(df.isnull().sum())
-    
+
     # Handle missing values (e.g., imputation or removal)
     df.dropna(inplace=True)  # Example: remove rows with missing values
-    
+
     # Drop the 'Comments' column
     df.drop(columns=['Comments'], inplace=True)
-    
+
     # Z-score outlier detection
     z_scores = stats.zscore(df[['GHI', 'DNI', 'DHI']])
     abs_z_scores = np.abs(z_scores)
