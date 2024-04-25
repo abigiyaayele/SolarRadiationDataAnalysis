@@ -20,7 +20,6 @@ plt.title('GHI over Time')
 #Select relevant columns for temperature analysis
 temperature_columns = ['TModA', 'TModB', 'Tamb']
 dataset_temperatures = dataset[temperature_columns]
-
 #Plot temperature distribution
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=dataset_temperatures, orient='v')

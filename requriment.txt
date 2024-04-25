@@ -1,0 +1,25 @@
+matplotlib==3.8.0
+nltk==3.8.1
+pandas==1.5.3
+seaborn==0.13.0
+matplotlib, pandas, and seaborn are all popular Python libraries used for data visualization and data manipulation tasks. Here's a brief overview of each:
+
+1. Matplotlib:
+   - Matplotlib is a comprehensive library for creating static, interactive, and animated visualizations in Python.
+   - It provides a wide variety of plotting functions and customization options to create publication-quality plots.
+   - Matplotlib is highly flexible and can be used to create a wide range of plots, including line plots, scatter plots, bar plots, histograms, heatmaps, and more.
+
+2. Pandas:
+   - Pandas is a powerful data manipulation and analysis library for Python.
+   - It provides data structures and functions for efficiently handling and manipulating structured data, primarily in the form of DataFrames and Series.
+   - Pandas simplifies tasks such as loading data from various file formats (e.g., CSV, Excel, SQL databases), cleaning and preprocessing data, transforming data, and performing descriptive statistics.
+   - It is widely used for data wrangling and exploratory data analysis (EDA) tasks.
+
+3. Seaborn:
+   - Seaborn is a statistical data visualization library based on matplotlib.
+   - It provides a high-level interface for creating attractive and informative statistical graphics.
+   - Seaborn simplifies the process of creating complex visualizations by providing easy-to-use functions for common tasks, such as creating scatter plots, box plots, violin plots, heatmaps, and more.
+   - It also integrates well with pandas DataFrames, making it easy to visualize data directly from pandas objects.
+
+These three libraries are often  i used together in data analysis workflows, with pandas used for data manipulation, 
+matplotlib used for basic plotting, and seaborn used for more advanced statistical visualizations.
